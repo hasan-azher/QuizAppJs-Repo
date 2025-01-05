@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Welcome To The Quiz App</h1>
+      <hr />
+    </div>
+    <div class="Qcontainer">
+      <h2>Questions</h2>
+      <hr />
+      <form id="quizForm">
+        <div class="question">
+          <p>1. What is the capital of Pakistan?</p>
+          <input type="radio" name="q1" value="Pakistan" /> Pakistan<br />
+          <input type="radio" name="q1" value="Berlin" /> Berlin<br />
+          <input type="radio" name="q1" value="Madrid" /> Madrid<br />
+        </div>
+
+        <div class="question">
+          <p>2. How can you declare a variable in JavaScript?</p>
+          <input type="radio" name="q2" value="var" /> var<br />
+          <input type="radio" name="q2" value="let" /> let<br />
+          <input type="radio" name="q2" value="const" /> const<br />
+          <input type="radio" name="q2" value="All of the above" /> All of the
+          above<br />
+        </div>
+
+        <div class="question">
+          <p>3. Inside which HTML element do we put the JavaScript?</p>
+          <input type="radio" name="q3" value="scripting" />
+          &lt;scripting&gt;<br />
+          <input type="radio" name="q3" value="js" /> &lt;JavaScript&gt;<br />
+          <input type="radio" name="q3" value="JavaScript" /> &lt;js&gt;<br />
+          <input type="radio" name="q3" value="Script" /> &lt;script&gt;<br />
+        </div>
+
+        <div class="question">
+          <p>
+            4. The external JavaScript file must contain the &lt;script&gt; tag.
+          </p>
+          <input type="radio" name="q4" value="true" /> True<br />
+          <input type="radio" name="q4" value="false" /> False<br />
+        </div>
+
+        <div class="question">
+          <p>5. Which event occurs when the user clicks on an HTML element?</p>
+          <input type="radio" name="q5" value="onclick" /> onclick<br />
+          <input type="radio" name="q5" value="onchange" /> onchange<br />
+          <input type="radio" name="q5" value="onmouseclick" />
+          onmouseclick<br />
+          <input type="radio" name="q5" value="onmouseover" /> onmouseover<br />
+        </div>
+
+        <div class="question">
+          <p>6. JavaScript is the same as Java.</p>
+          <input type="radio" name="q6" value="true" /> True<br />
+          <input type="radio" name="q6" value="false" /> False<br />
+        </div>
+
+        <div class="buttonContainer">
+          <button type="button" id="submitButton" onclick="submitQuiz()">
+            Submit Quiz
+          </button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
